@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Tektur:wght@400..900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab", serif;
+  background-color: #f8f8f8;
+}
+/*оформление шапки*/
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 75px;
+  background-color: #272727;
+  color: #f8f8f8;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  right: 80px;
+}
+.logo > img {
+  object-fit: contain;
+  height: 35px;
+  width: 35px;
+  margin-right: 10px;
+}
+.logo > h1 {
+  font-family: "Tektur", sans-serif;
+  font-size: 35px;
+}
+header a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 25px;
+}
+header a:visited {
+  color: #f8f8f8;
+}
+.pustota {
+  height: 100px;
+}
+/*оформление баннера*/
+#banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 650px;
+  padding: 0 50px 0 100px;
+  position: relative;
+  font-family: "Tektur", sans-serif;
+}
+#banner::after {
+  content: "";
+  display: inline-block;
+  width: 540px;
+  height: 540px;
+  border-radius: 640px;
+  background-color: #d9d9d9;
+  position: absolute;
+  top: 70px;
+  right: 350px;
+  z-index: -1;
+}
+.text {
+  display: flex;
+  align-items: center;
+  width: 667px;
+  height: 412px;
+}
+.text1 h1 {
+  font-weight: 400;
+  font-size: 45px;
+}
+.text1 h2 {
+  font-weight: 400;
+  font-size: 20px;
+  font-family: "Roboto Slab", serif;
+  bottom: 30px;
+}
+.images {
+  width: 628.75px;
+  height: 419px;
+}
+/*оформляем раздел стили*/
+#stili {
+  background-color: #272727;
+  color: #d9d9d9;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+#stili > h1 {
+  text-align: center;
+  font-family: "Tektur", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+}
+.cardS {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 14px;
+}
+.card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  margin: 10px 8px;
+  border-radius: 90px;
+  background-color: #d9d9d9;
+  width: 600px;
+}
+.card p {
+  color: #272727;
+  width: 300px;
+  margin: 3px;
+  text-align: center;
+}
+span {
+  color: #181717;
+  font-size: 26px;
+  font-family: "Tektur", sans-serif;
+  background-color: #eeee;
+  border-radius: 3px;
+}
+.cardS > img {
+  position: relative;
+  right: 290px;
+  margin: 20px 0 20px 0;
+}
+
+/*оформляем раздел основоположники*/
+#osnovo > h1 {
+  text-align: center;
+  font-family: "Tektur", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+}
+.cardS2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 14px;
+}
+.card2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  margin: 10px 8px;
+  border-radius: 18px;
+  background-color: #d9d9d9;
+  width: 600px;
+  height: 280px;
+  text-align: center;
+}
+
+/*оформляем раздел музыки*/
+#music {
+  background-image: url(img/Fon\ music.png);
+  background-size: contain;
+  height: 700px;
+}
+#music > h1 {
+  text-align: center;
+  font-family: "Tektur", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: #efefef;
+  padding-top: 35px;
+}
+.ssilka {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 800px;
+  position: relative;
+  left: 270px;
+}
+.ssilka > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 35px;
+  background-color: #d9d9d9;
+  width: 356px;
+  height: 91px;
+  color: #181717;
+  font-size: 35px;
+  font-family: "Tektur", sans-serif;
+  text-decoration: none;
+  margin: 20px 8px;
+}
+/*оформляем подвал*/
+footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 30px;
+  color: #d9d9d9;
+  font-size: 20px;
+  height: 138px;
+  background-color: #272727;
+}
+footer > img {
+  height: 56px;
+  width: 56px;
+}
+body > a {
+  position: absolute;
+  left: 87%;
+  z-index: 2;
+  background-color: #d9d9d9;
+  border-radius: 50px;
+}
